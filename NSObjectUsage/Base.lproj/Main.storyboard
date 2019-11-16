@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JWz-vH-axU">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Table View Controller-->
+        <scene sceneID="F02-wy-IW8">
+            <objects>
+                <tableViewController storyboardIdentifier="TableViewController" id="VAq-Uz-Vvb" customClass="TableViewController" customModule="NSObjectUsage" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Cak-Tc-Z2m">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tableViewCell" textLabel="Tu6-0h-cN7" style="IBUITableViewCellStyleDefault" id="M0C-ev-m3c" customClass="TableViewCell" customModule="NSObjectUsage" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="M0C-ev-m3c" id="A6K-32-7ec">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Tu6-0h-cN7">
+                                            <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="eBG-Jf-CKN" id="Jxg-7D-TbT"/>
+                            <outlet property="delegate" destination="eBG-Jf-CKN" id="F7e-Yf-r7E"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lW6-1H-O0D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <customObject id="eBG-Jf-CKN" customClass="ManageTableViewDataMethods" customModule="NSObjectUsage" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="-375" y="-6"/>
+        </scene>
+        <!--ImagePicker-->
+        <scene sceneID="NZU-rK-skO">
+            <objects>
+                <viewController id="JWz-vH-axU" userLabel="ImagePicker" customClass="ViewController" customModule="NSObjectUsage" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MHX-NQ-x9h">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dTQ-9B-c3f">
+                                <rect key="frame" x="0.0" y="44" width="414" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="Zj1-V2-uma"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4u8-y1-sTA">
+                                <rect key="frame" x="162.5" y="370" width="89" height="30"/>
+                                <state key="normal" title="Image Picker"/>
+                                <connections>
+                                    <action selector="showImagePicker:" destination="gJb-Py-yK6" eventType="touchUpInside" id="Shh-H4-0XX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="4u8-y1-sTA" firstAttribute="top" secondItem="dTQ-9B-c3f" secondAttribute="bottom" constant="26" id="Euc-cm-HqQ"/>
+                            <constraint firstItem="dTQ-9B-c3f" firstAttribute="top" secondItem="ynZ-hQ-ozp" secondAttribute="top" id="aQ6-eL-SZr"/>
+                            <constraint firstItem="ynZ-hQ-ozp" firstAttribute="trailing" secondItem="dTQ-9B-c3f" secondAttribute="trailing" id="bFo-4d-R6V"/>
+                            <constraint firstItem="4u8-y1-sTA" firstAttribute="centerX" secondItem="ynZ-hQ-ozp" secondAttribute="centerX" id="lov-Qb-TKG"/>
+                            <constraint firstItem="dTQ-9B-c3f" firstAttribute="leading" secondItem="ynZ-hQ-ozp" secondAttribute="leading" id="wkz-Ez-Kuz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ynZ-hQ-ozp"/>
+                    </view>
+                    <connections>
+                        <outlet property="imagePickerdelegate" destination="gJb-Py-yK6" id="Y1x-Gs-cgP"/>
+                        <outlet property="imageView" destination="dTQ-9B-c3f" id="YNp-yb-HZG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PdC-4G-car" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <customObject id="gJb-Py-yK6" customClass="ImagePickerController" customModule="NSObjectUsage" customModuleProvider="target">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="" value="NO"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="imagePickerdelegate" destination="JWz-vH-axU" id="Yxk-Q4-IfT"/>
+                        <outlet property="presentationController" destination="JWz-vH-axU" id="UeV-yK-J4x"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="499" y="-22"/>
+        </scene>
+    </scenes>
+</document>
