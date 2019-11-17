@@ -9,17 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    @IBOutlet var imageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
-}
-
-extension ViewController: ImagePickerDelegate {
-
-    func didSelect(image: UIImage?) {
-        self.imageView.image = image
-    }
 }

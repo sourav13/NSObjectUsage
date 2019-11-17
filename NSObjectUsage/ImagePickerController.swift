@@ -14,9 +14,10 @@ import UIKit
 
  class ImagePickerController: NSObject{
 
-      var pickerController: UIImagePickerController
-      @IBOutlet  weak var presentationController: UIViewController?//view controller should be linked to this.
-      @IBOutlet weak var  imagePickerdelegate:ImagePickerDelegate? // view controller should be linked to this.
+        var pickerController: UIImagePickerController
+        @IBOutlet  weak var presentationController: UIViewController!//view controller should be linked to this.
+        @IBOutlet weak var  imagePickerdelegate:ImagePickerDelegate! // view controller should be linked to this.
+        @IBOutlet weak var imagePlacer: UIImageView!
         @IBAction func showImagePicker(_ sender: UIButton) {
             self.present(from: sender)
         }
@@ -61,14 +62,9 @@ import UIKit
     
     private func pickerController(_ controller: UIImagePickerController, didSelect image: UIImage?) {
         controller.dismiss(animated: true, completion: nil)
-        
-       self.imagePickerdelegate?.didSelect(image: image)
+              self.imagePlacer.image = image
     }
-
-
-
 }
-
 extension ImagePickerController:UIImagePickerControllerDelegate,UINavigationControllerDelegate{
         public func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
             self.pickerController(picker, didSelect: nil)

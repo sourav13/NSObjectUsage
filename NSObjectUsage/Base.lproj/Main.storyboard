@@ -86,9 +86,6 @@
                         <viewLayoutGuide key="safeArea" id="ynZ-hQ-ozp"/>
                     </view>
                     <navigationItem key="navigationItem" id="0eH-xj-SKZ"/>
-                    <connections>
-                        <outlet property="imageView" destination="dTQ-9B-c3f" id="YNp-yb-HZG"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PdC-4G-car" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <customObject id="gJb-Py-yK6" customClass="ImagePickerController" customModule="NSObjectUsage" customModuleProvider="target">
@@ -97,6 +94,7 @@
                     </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="imagePickerdelegate" destination="JWz-vH-axU" id="Yxk-Q4-IfT"/>
+                        <outlet property="imagePlacer" destination="dTQ-9B-c3f" id="D8L-cC-jvq"/>
                         <outlet property="presentationController" destination="JWz-vH-axU" id="UeV-yK-J4x"/>
                     </connections>
                 </customObject>
