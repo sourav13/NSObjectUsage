@@ -9,8 +9,30 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var button: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        guard imageView.image != nil else{
+            print("no image at start")
+            return
+        }
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+       
+        guard imageView.image != nil else{
+                 print("no image at start")
+                 return
+             }
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        guard imageView.image != nil else{
+                      print("no image at start")
+                      return
+                  }
     }
     
 }
+

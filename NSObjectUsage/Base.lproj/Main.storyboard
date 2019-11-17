@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="X2o-mA-HWK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Sl3-ai-efn">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15703"/>
@@ -71,7 +71,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="RE5-dt-TMf" kind="show" id="vh6-nd-gLg"/>
+                                    <segue destination="6ek-FX-gFB" kind="show" id="E9e-tP-S5d"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -86,6 +86,10 @@
                         <viewLayoutGuide key="safeArea" id="ynZ-hQ-ozp"/>
                     </view>
                     <navigationItem key="navigationItem" id="0eH-xj-SKZ"/>
+                    <connections>
+                        <outlet property="button" destination="4u8-y1-sTA" id="z57-bU-gBr"/>
+                        <outlet property="imageView" destination="dTQ-9B-c3f" id="Nrf-Oa-YvX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PdC-4G-car" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <customObject id="gJb-Py-yK6" customClass="ImagePickerController" customModule="NSObjectUsage" customModuleProvider="target">
@@ -93,52 +97,28 @@
                         <userDefinedRuntimeAttribute type="boolean" keyPath="" value="NO"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
-                        <outlet property="imagePickerdelegate" destination="JWz-vH-axU" id="Yxk-Q4-IfT"/>
                         <outlet property="imagePlacer" destination="dTQ-9B-c3f" id="D8L-cC-jvq"/>
                         <outlet property="presentationController" destination="JWz-vH-axU" id="UeV-yK-J4x"/>
                     </connections>
                 </customObject>
             </objects>
-            <point key="canvasLocation" x="1406" y="-118"/>
+            <point key="canvasLocation" x="2615.9420289855075" y="-113.16964285714285"/>
         </scene>
-        <!--Image Pickerdelegate-->
-        <scene sceneID="VtV-S4-eeO">
+        <!--View Controller-->
+        <scene sceneID="nY5-8l-jQx">
             <objects>
-                <viewController id="RE5-dt-TMf" customClass="secondViewController" customModule="NSObjectUsage" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Jvr-Wc-XKQ">
+                <viewController id="6ek-FX-gFB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kEC-sR-1kN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9PX-CR-R07">
-                                <rect key="frame" x="163" y="328" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="showImagePicker:" destination="pRP-Ew-MNr" eventType="touchUpInside" id="LvC-nq-HtP"/>
-                                </connections>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aKf-nM-fwb">
-                                <rect key="frame" x="154" y="129" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="sLW-Gw-c7j"/>
+                        <viewLayoutGuide key="safeArea" id="Nrj-UW-myh"/>
                     </view>
-                    <navigationItem key="navigationItem" id="y2m-Wl-hBl"/>
-                    <connections>
-                        <outlet property="imageView" destination="aKf-nM-fwb" id="lmo-ad-jDV"/>
-                    </connections>
+                    <navigationItem key="navigationItem" id="qvx-WM-ERX"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iC9-Pg-0XK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <customObject id="pRP-Ew-MNr" customClass="ImagePickerController" customModule="NSObjectUsage" customModuleProvider="target">
-                    <connections>
-                        <outlet property="imagePickerdelegate" destination="RE5-dt-TMf" id="WN7-Uh-JQf"/>
-                        <outlet property="presentationController" destination="RE5-dt-TMf" id="aSe-9n-fdv"/>
-                    </connections>
-                </customObject>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y4b-Nu-kxW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2129" y="-137"/>
+            <point key="canvasLocation" x="3532" y="-240"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nfI-Kt-qvi">
@@ -150,13 +130,28 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="JWz-vH-axU" kind="relationship" relationship="rootViewController" id="l8J-dI-mAa"/>
-                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d47-Hc-MhB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="498.55072463768118" y="-22.098214285714285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="rDV-wz-1U3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Sl3-ai-efn" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pc7-E7-1u6">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="JWz-vH-axU" kind="relationship" relationship="rootViewController" id="D06-1i-uQe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6a6-Wk-OFo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1705.7971014492755" y="-113.16964285714285"/>
         </scene>
     </scenes>
 </document>

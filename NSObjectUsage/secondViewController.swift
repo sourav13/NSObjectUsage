@@ -20,9 +20,3 @@ class secondViewController: UIViewController {
 
 
 }
-extension secondViewController: ImagePickerDelegate {
-
-    func didSelect(image: UIImage?) {
-        self.imageView.image = image
-    }
-}

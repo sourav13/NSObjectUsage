@@ -7,16 +7,9 @@
 //
 
 import UIKit
-
-@objc public protocol ImagePickerDelegate: class {
-    func didSelect(image: UIImage?)
-}
-
  class ImagePickerController: NSObject{
-
         var pickerController: UIImagePickerController
-        @IBOutlet  weak var presentationController: UIViewController!//view controller should be linked to this.
-        @IBOutlet weak var  imagePickerdelegate:ImagePickerDelegate! // view controller should be linked to this.
+        @IBOutlet  weak var presentationController: UIViewController!//view controller should be linked to this
         @IBOutlet weak var imagePlacer: UIImageView!
         @IBAction func showImagePicker(_ sender: UIButton) {
             self.present(from: sender)
