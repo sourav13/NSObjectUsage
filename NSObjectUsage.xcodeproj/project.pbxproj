@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		185310A12380CB56006B6448 /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185310A02380CB56006B6448 /* secondViewController.swift */; };
 		18DA01932380975800DE932B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DA01922380975800DE932B /* AppDelegate.swift */; };
 		18DA01952380975800DE932B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DA01942380975800DE932B /* SceneDelegate.swift */; };
 		18DA01972380975800DE932B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DA01962380975800DE932B /* ViewController.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		185310A02380CB56006B6448 /* secondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondViewController.swift; sourceTree = "<group>"; };
 		18DA018F2380975800DE932B /* NSObjectUsage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSObjectUsage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18DA01922380975800DE932B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18DA01942380975800DE932B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				18DA01942380975800DE932B /* SceneDelegate.swift */,
 				18DA01962380975800DE932B /* ViewController.swift */,
 				18DA01CC23809D9800DE932B /* ImagePickerController.swift */,
+				185310A02380CB56006B6448 /* secondViewController.swift */,
 				18DA01982380975800DE932B /* Main.storyboard */,
 				18DA01CB23809D4F00DE932B /* Table */,
 				18DA019E2380975900DE932B /* Assets.xcassets */,
@@ -289,6 +292,7 @@
 				18DA01C62380979400DE932B /* TableViewController.swift in Sources */,
 				18DA01C82380984000DE932B /* ManageTableViewDataMethods.swift in Sources */,
 				18DA01CA23809A6F00DE932B /* TableViewCell.swift in Sources */,
+				185310A12380CB56006B6448 /* secondViewController.swift in Sources */,
 				18DA019D2380975800DE932B /* NSObjectUsage.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

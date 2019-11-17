@@ -17,8 +17,6 @@ import UIKit
       var pickerController: UIImagePickerController
       @IBOutlet  weak var presentationController: UIViewController?//view controller should be linked to this.
       @IBOutlet weak var  imagePickerdelegate:ImagePickerDelegate? // view controller should be linked to this.
-    
-    
         @IBAction func showImagePicker(_ sender: UIButton) {
             self.present(from: sender)
         }
