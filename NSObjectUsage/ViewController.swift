@@ -11,8 +11,6 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet var imageView: UIImageView!
-    @IBOutlet var imagePickerdelegate: ImagePickerDelegate? //storyboard object nsObject should be linked to this
-    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

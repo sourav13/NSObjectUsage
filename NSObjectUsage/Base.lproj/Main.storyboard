@@ -78,7 +78,6 @@
                         <viewLayoutGuide key="safeArea" id="ynZ-hQ-ozp"/>
                     </view>
                     <connections>
-                        <outlet property="imagePickerdelegate" destination="gJb-Py-yK6" id="Y1x-Gs-cgP"/>
                         <outlet property="imageView" destination="dTQ-9B-c3f" id="YNp-yb-HZG"/>
                     </connections>
                 </viewController>
